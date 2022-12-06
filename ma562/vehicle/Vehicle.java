@@ -1,37 +1,39 @@
-class Vehicle {
+package ma562.vehicle;
+
+public class Vehicle {
 
    String model;
 
-   Vehicle(String _model) {
+   public Vehicle(String _model) {
       model = _model;
       System.out.print(model);
    }
 
-   String getModel( ) { 
+   public String getModel( ) { 
       return null;
    }
 
-   String getVehicleModel( ) {
+   public String getVehicleModel( ) {
       return getModel( );
    }
 
-   String getColor( ) { 
+   public String getColor( ) { 
       return null;
    }
 
-   String getEngine( ) {
+   public String getEngine( ) {
       return null;
    }
 
-   String getTransmission( ) {
+   public String getTransmission( ) {
       return null;
    }
 
-   int getNumPassengers( ) {
+   public int getNumPassengers( ) {
       return 0;
    }
 
-   String getWarranty( ) {
+   public String getWarranty( ) {
       return null;
    }
 }

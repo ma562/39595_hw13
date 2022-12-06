@@ -1,6 +1,11 @@
-class Sifter {
+package ma562.sift;
+import ma562.vehicle.FordF350;
+import ma562.vehicle.HondaFit;
+import ma562.vehicle.Vehicle;
 
-   FordF350[ ] getF350s(Vehicle[ ] candidates) {
+public class Sifter {
+
+   protected FordF350[ ] getF350s(Vehicle[ ] candidates) {
       FordF350 fordF350s[ ] = new FordF350[candidates.length];
       int F350Count = 0;
       for (int i = 0; i < candidates.length; i++) {
@@ -16,7 +21,7 @@ class Sifter {
       return fordF350s;
    }
 
-   HondaFit[ ] getFits(Vehicle[ ] candidates) {
+   public HondaFit[ ] getFits(Vehicle[ ] candidates) {
       HondaFit hondaFits[ ] = new HondaFit[candidates.length];
       int F350Count = 0;
       for (int i = 0; i < candidates.length; i++) {

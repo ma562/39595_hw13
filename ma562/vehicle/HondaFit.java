@@ -1,34 +1,36 @@
-class HondaFit extends Vehicle {
+package ma562.vehicle;
+
+public class HondaFit extends Vehicle {
 
    String color;
 
-   HondaFit(String _color) {
+   public HondaFit(String _color) {
       super("HondaFit");
       color = _color;
       System.out.println(" built");
    }
 
-   String getModel( ) { 
+   public String getModel( ) { 
       return model;
    }
 
-   String getColor( ) { 
+   public String getColor( ) { 
       return color;
    }
 
-   String getEngine( ) {
+   public String getEngine( ) {
       return "1.5L i-DSI 4 Cylinder";
    }
 
-   String getTransmission( ) {
+   public String getTransmission( ) {
       return "manual";
    }
 
-   int getNumPassengers( ) {
+   public int getNumPassengers( ) {
       return 5;
    }
 
-   String getWarranty( ) {
+   public String getWarranty( ) {
       return "3/36,000 + 5/60,000 Powertrain";
    }
 }
